@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /pay
+# Hidden pages: test tools, the garage and the after-payment page.
+Disallow: /garage
+Disallow: /testing
+Disallow: /test-drive
+Disallow: /paid
+Disallow: /js/garage-cars.js
+
+Sitemap: https://teslasound.io/sitemap.xml

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="color-scheme" content="dark">
+  <title>Explore TeslaSound – Engine Sound for Your Tesla</title>
+  <meta name="description" content="How TeslaSound gives your Tesla the live sound of a gas engine that follows your real speed.">
+  <link rel="canonical" href="explore.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TeslaSound">
+  <meta property="og:url" content="https://teslasound.io/explore.html">
+  <meta property="og:title" content="Explore TeslaSound – Engine Sound for Your Tesla">
+  <meta property="og:description" content="How TeslaSound gives your Tesla the live sound of a gas engine that follows your real speed.">
+  <meta property="og:image" content="https://teslasound.io/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand story-brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M5 22a11 11 0 1 1 22 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M16 22l6-8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="16" cy="22" r="2.5" fill="var(--accent)"/>
+      </svg>
+      TeslaSound
+    </a>
+    <a class="story-open" href="index.html">Open TeslaSound</a>
+  </header>
+
+  <!-- The story, a scroll-driven page (css/story.css, js/story.js), opened
+       by "Explore more" on the front page. -->
+  <div class="story story-page" id="story">
+
+    <section class="scene scene-silence" data-scene="silence" aria-labelledby="storyTitle">
+      <div class="sticky">
+        <canvas class="wave" aria-hidden="true"></canvas>
+        <div class="silence-copy">
+          <p class="sl" data-fade="-1 0 .15 .2">Your Tesla is <span class="grad">fast.</span></p>
+          <p class="sl" data-fade=".19 .24 .32 .37">Brilliant.</p>
+          <p class="sl" data-fade=".36 .41 .5 .55">And completely <span class="hush">silent.</span></p>
+          <p class="sl sl-turn" data-fade=".56 .61 .7 .75">Until now.</p>
+          <div class="sl sl-final" data-fade=".74 .84 2 2">
+            <p class="eyebrow">TeslaSound · engine sound for EVs</p>
+            <h2 class="h-big" id="storyTitle">Make your Tesla <span class="grad">sound like a gas car.</span></h2>
+            <p class="lead">TeslaSound plays a live engine through your car's speakers, and it follows your real speed. It burbles at idle, revs when you floor it, shifts gears and crackles when you lift off. Open it in the Tesla browser and go. Nothing to install.</p>
+            <ul class="pills">
+              <li>5 min free every day</li>
+              <li>No app, no account</li>
+              <li>Location stays in your browser</li>
+              <li><span data-car-count>14</span> sounds, more coming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-drive" data-scene="drive" aria-labelledby="driveTitle">
+      <div class="sticky">
+        <div class="d-glow" aria-hidden="true"></div>
+        <div class="d-layer d-far" aria-hidden="true"></div>
+        <div class="d-layer d-hills" aria-hidden="true"></div>
+        <div class="d-layer d-lights" aria-hidden="true"></div>
+        <div class="d-road" aria-hidden="true"><div class="d-layer d-dash"></div></div>
+        <div class="d-layer d-streaks" aria-hidden="true"></div>
+        <div class="d-tach" aria-hidden="true">
+          <svg viewBox="-30 -30 460 460">
+            <defs>
+              <linearGradient id="dtGrad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" stop-color="#ff8a3d"/>
+                <stop offset=".7" stop-color="#ff5a1f"/>
+                <stop offset="1" stop-color="#ff2e43"/>
+              </linearGradient>
+            </defs>
+            <path class="dt-track"/>
+            <path class="dt-red"/>
+            <path class="dt-glow" pathLength="100" stroke-dasharray="0 100"/>
+            <path class="dt-value" pathLength="100" stroke-dasharray="0 100"/>
+            <g class="dt-ticks"></g>
+            <circle class="dt-tip" r="8" cx="-999" cy="-999"/>
+          </svg>
+          <div class="d-read">
+            <b class="d-speed">0</b>
+            <span class="d-unit">km/h</span>
+            <span class="d-gear">N</span>
+            <span class="d-rpm"><i>760</i> rpm</span>
+          </div>
+        </div>
+        <div class="d-car">
+          <div class="d-body">
+            <img src="img/v8-muscle.png" alt="V8 Muscle, a car from the TeslaSound garage" width="880" height="253" loading="lazy" decoding="async">
+            <i class="d-wheel" style="left: 22.2%; top: 73.6%"></i>
+            <i class="d-wheel" style="left: 80.8%; top: 74.3%"></i>
+            <i class="d-flame"></i>
+          </div>
+        </div>
+        <div class="d-copy">
+          <p class="eyebrow" id="driveTitle">Scroll to drive · V8 Muscle</p>
+          <div class="d-caps">
+            <div class="d-cap" data-fade="-1 0 .11 .14"><h3>Idle. Then a blip.</h3><p>A lumpy crossplane burble at 760 rpm. Stopped at a light? Hold REV and it barks.</p></div>
+            <div class="d-cap" data-fade=".13 .16 .3 .33"><h3>Floor it.</h3><p>First gear. The revs climb, the pipes open up and the intake roars.</p></div>
+            <div class="d-cap" data-fade=".32 .35 .5 .53"><h3>Shift.</h3><p>A real gearbox with real ratios. The revs drop and the pull goes on.</p></div>
+            <div class="d-cap" data-fade=".52 .55 .71 .74"><h3>Keep going.</h3><p>Third, fourth, all the way up. Every rev follows the speed, the way a real engine would.</p></div>
+            <div class="d-cap" data-fade=".73 .76 .87 .9"><h3>Lift off.</h3><p>Pops and crackle on the overrun. Scroll back up and do it again.</p></div>
+            <div class="d-cap" data-fade=".89 .92 2 2"><h3>Now picture it in your Tesla.</h3><p>In the car the same engine follows your real speed. Nothing you just heard was a recording.</p></div>
+          </div>
+          <button type="button" class="sound-btn" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Turn the sound on</span></button>
+          <p class="sound-note" role="status" aria-live="polite">Hear the real synthesizer, revved by your scroll.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="mq-row"><div class="mq-move"></div></div>
+      <div class="mq-row mq-alt"><div class="mq-move"></div></div>
+    </div>
+
+    <section class="block manifesto wrap" aria-labelledby="loopTitle">
+      <p class="eyebrow">Not a loop</p>
+      <h2 class="h-big" id="loopTitle">Built live,<br><span class="grad">one pulse at a time.</span></h2>
+      <p class="words">Most fake engine noise loops a recording, so it never really matches the car. <b>TeslaSound builds the sound in real time from your speed.</b> It models the firing order, every exhaust pulse, the pipes, the intake roar and the gearbox, so what you hear is what a real engine would do at that speed.</p>
+    </section>
+
+    <section class="scene scene-track scene-pipe" data-scene="pipe" aria-labelledby="pipeTitle">
+      <div class="sticky">
+        <div class="wrap track-head">
+          <p class="eyebrow">How it sounds real</p>
+          <h2 class="h-mid" id="pipeTitle">From your speed <span class="grad">to your speakers.</span></h2>
+        </div>
+        <ol class="track stages">
+          <li class="stage">
+            <span class="stage-n">01</span>
+            <svg class="stage-art art-fire" viewBox="0 0 160 80" aria-hidden="true">
+              <circle cx="35" cy="28" r="9" style="--d: 0"/><circle cx="65" cy="28" r="9" style="--d: 7"/><circle cx="95" cy="28" r="9" style="--d: 5"/><circle cx="125" cy="28" r="9" style="--d: 2"/>
+              <circle cx="35" cy="54" r="9" style="--d: 3"/><circle cx="65" cy="54" r="9" style="--d: 6"/><circle cx="95" cy="54" r="9" style="--d: 4"/><circle cx="125" cy="54" r="9" style="--d: 1"/>
+            </svg>
+            <h3>Firing order</h3>
+            <p>Each cylinder fires in the real engine's order. That uneven beat is why a crossplane V8 lopes and a V12 howls.</p>
+          </li>
+          <li class="stage">
+            <span class="stage-n">02</span>
+            <svg class="stage-art art-pulse" viewBox="0 0 160 80" aria-hidden="true">
+              <path class="mv" d="M0 40l4-28l4 46l4-32l4 22l4-12l4 6l16-2l4-18l4 30l4-20l4 14l4-8l4 4l16-2l4-28l4 46l4-32l4 22l4-12l4 6l16-2l4-18l4 30l4-20l4 14l4-8l4 4l16-2l4-28l4 46l4-32l4 22l4-12l4 6l16-2l4-18l4 30l4-20l4 14l4-8l4 4l16-2l4-28l4 46l4-32l4 22l4-12l4 6l16-2l4-18l4 30l4-20l4 14l4-8l4 4l16-2"/>
+            </svg>
+            <h3>Exhaust pulses</h3>
+            <p>Every firing is its own pulse of sound, never quite the same twice, like real metal and real combustion.</p>
+          </li>
+          <li class="stage">
+            <span class="stage-n">03</span>
+            <svg class="stage-art art-pipe" viewBox="0 0 160 80" aria-hidden="true">
+              <path class="pipe" d="M4 34H62V20H118V34H156M4 46H62V60H118V46H156"/>
+              <circle r="4" cx="0" cy="40" style="--d: 0"/><circle r="4" cx="0" cy="40" style="--d: 1"/><circle r="4" cx="0" cy="40" style="--d: 2"/>
+            </svg>
+            <h3>Pipes &amp; muffler</h3>
+            <p>Pipe lengths, echoes and the muffler shape the tone, from a muffled stock car to open pipes.</p>
+          </li>
+          <li class="stage">
+            <span class="stage-n">04</span>
+            <svg class="stage-art art-chirp" viewBox="0 0 160 80" aria-hidden="true">
+              <path d="M4 38.0L6 36.0L8 34.1L10 32.4L12 31.0L14 29.8L16 29.1L18 28.9L20 29.3L22 30.2L24 31.7L26 33.8L28 36.3L30 39.2L32 42.3L34 45.4L36 48.3L38 50.7L40 52.3L42 53.0L44 52.6L46 50.9L48 48.1L50 44.3L52 39.9L54 35.2L56 30.9L58 27.5L60 25.7L62 25.8L64 28.1L66 32.4L68 38.1L70 44.4L72 50.2L74 54.3L76 55.7L78 53.8L80 48.7L82 41.4L84 33.5L86 26.8L88 23.5L90 24.7L92 30.4L94 39.3L96 48.8L98 55.7L100 57.4L102 52.7L104 43.0L106 31.7L108 23.5L110 22.1L112 28.8L114 41.0L116 53.1L118 58.9L120 55.0L122 42.7L124 28.4L126 20.6L128 24.4L130 38.3L132 53.7L134 60.3L136 52.6L138 35.5L140 21.3L142 21.4L144 36.6L146 55.1L148 61.0L150 48.2L152 27.5L154 18.2L156 30.1"/>
+            </svg>
+            <h3>Intake &amp; whine</h3>
+            <p>The intake roars under load. Where the car has a supercharger, you hear it whine as the revs climb.</p>
+          </li>
+          <li class="stage">
+            <span class="stage-n">05</span>
+            <svg class="stage-art art-gear" viewBox="0 0 160 80" aria-hidden="true">
+              <path pathLength="100" d="M6 70L44 16L48 46L84 14L88 40L122 12L126 34L154 18"/>
+              <text x="24" y="76">1</text><text x="64" y="76">2</text><text x="104" y="76">3</text><text x="140" y="76">4</text>
+            </svg>
+            <h3>Gearbox</h3>
+            <p>Real ratios and shift points. Quick upshifts, rev-matched downshifts, and a clutch in the manual cars.</p>
+          </li>
+          <li class="stage">
+            <span class="stage-n">06</span>
+            <svg class="stage-art art-spk" viewBox="0 0 160 80" aria-hidden="true">
+              <path class="cone" d="M46 32h12l18-14v44L58 48H46z"/>
+              <path class="arc" style="--d: 0" d="M88 30a14 14 0 0 1 0 20"/>
+              <path class="arc" style="--d: 1" d="M96 22a26 26 0 0 1 0 36"/>
+              <path class="arc" style="--d: 2" d="M104 14a38 38 0 0 1 0 52"/>
+            </svg>
+            <h3>Your speakers</h3>
+            <p>Mixed live in the browser and played through the car's speakers, like music. No files, no loops.</p>
+          </li>
+        </ol>
+        <div class="wrap"><div class="track-bar" aria-hidden="true"><i class="track-fill"></i></div></div>
+      </div>
+    </section>
+
+    <section class="block features wrap" aria-labelledby="featTitle">
+      <p class="eyebrow">What you get</p>
+      <h2 class="h-big" id="featTitle">Feels like <span class="grad">the real thing.</span></h2>
+      <div class="bento">
+        <article class="tile t-wide rv">
+          <svg class="t-viz t-chart" viewBox="0 0 320 120" aria-hidden="true">
+            <path class="grid" d="M0 30H320M0 60H320M0 90H320"/>
+            <path class="sp" pathLength="100" d="M0 112C70 104 120 60 200 38S290 22 320 20"/>
+            <path class="rp" pathLength="100" d="M0 104L58 30L64 62L128 26L134 54L206 24L212 46L320 30"/>
+            <text x="6" y="16">speed</text><text class="rp-t" x="62" y="16">revs</text>
+          </svg>
+          <h3>Follows your real speed</h3>
+          <p>GPS speed in, revs out. Floor it and the engine revs harder and shifts later. Lift off and it crackles on the overrun.</p>
+        </article>
+        <article class="tile rv" style="--rd: .08s">
+          <div class="t-viz t-gears" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><i></i></div>
+          <h3>A real gearbox</h3>
+          <p>Automatics, dual-clutch and a proper manual with a clutch. It blips and rev-matches on the way down when you brake.</p>
+        </article>
+        <article class="tile rv">
+          <div class="t-viz t-sliders" aria-hidden="true">
+            <div style="--v: .5"><span>Intensity</span><i></i></div>
+            <div style="--v: .75"><span>Character</span><i></i></div>
+            <div style="--v: .3"><span>Crackle</span><i></i></div>
+          </div>
+          <h3>Tune it your way</h3>
+          <p><b>Intensity</b> sets how eagerly it revs and how late it shifts. <b>Character</b> goes from a stock, muffled engine to a lumpy cam with open pipes. <b>Crackle</b> adds the pops and bangs.</p>
+        </article>
+        <article class="tile t-wide rv" style="--rd: .08s">
+          <div class="t-viz t-pedals" aria-hidden="true"><span class="tp-brake"></span><span class="tp-gas"></span></div>
+          <h3>Test drive anywhere</h3>
+          <p>No car nearby? Press the Gas and Brake pedals on screen (lower presses harder, the top of Gas holds your speed) or play the demo run. Works on a phone or a laptop too.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scene scene-track scene-garage" data-scene="garage" aria-labelledby="garageTitle">
+      <div class="sticky">
+        <div class="wrap track-head">
+          <p class="eyebrow">The garage</p>
+          <h2 class="h-mid" id="garageTitle"><span data-car-count>14</span> sounds, <span class="grad">and more on the way.</span></h2>
+          <p class="track-sub">Engines modelled on real cars, made-up ones, an electric buzz and a few you would never find at a dealer. Pick one before you drive, switch any time.</p>
+        </div>
+        <div class="track garage-track">
+          <article class="gcar gcar-soon">
+            <span class="gcar-n">+</span>
+            <div class="gcar-art"><span class="soon-mark" aria-hidden="true">?</span></div>
+            <div class="gcar-body">
+              <span class="badge">Coming soon</span>
+              <h3>More sounds coming</h3>
+              <p>New cars land in the garage all the time, real and made-up. Got an engine you would love to hear in your EV? Tell us at <a href="mailto:lifemock@gmail.com">lifemock@gmail.com</a>.</p>
+            </div>
+          </article>
+        </div>
+        <div class="wrap"><div class="track-bar" aria-hidden="true"><i class="track-fill"></i></div></div>
+        <p class="wrap track-note">Car names only describe the style of sound. Every sound is made by our own code, no recordings.</p>
+      </div>
+    </section>
+
+    <section class="block steps wrap" aria-labelledby="stepsTitle">
+      <p class="eyebrow">In the car</p>
+      <h2 class="h-big" id="stepsTitle">Four steps, <span class="grad">about a minute.</span></h2>
+      <div class="steps-grid">
+        <div class="screen-wrap">
+          <div class="screen" data-step="1" aria-hidden="true">
+            <div class="scr-bar"><span class="scr-lock"></span><span class="scr-url">teslasound.io</span></div>
+            <div class="scr-body">
+              <div class="scr-panel scr-1">
+                <svg class="scr-mark" viewBox="0 0 32 32"><path d="M5 22a11 11 0 1 1 22 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M16 22l6-8" stroke="#ff5a1f" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="22" r="2.5" fill="#ff5a1f"/></svg>
+                <b>TeslaSound</b>
+                <span class="scr-star">★ Bookmarked</span>
+              </div>
+              <div class="scr-panel scr-2">
+                <div class="scr-prompt"><span><b>teslasound.io</b> wants to know your location</span><span class="scr-acts"><i>Block</i><i class="allow">Allow</i></span></div>
+                <div class="scr-start"><span></span>Start engine</div>
+              </div>
+              <div class="scr-panel scr-3">
+                <div class="scr-vol"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8a5 5 0 0 1 0 8M18.5 5.5a8.5 8.5 0 0 1 0 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div class="vol-track"><i></i></div></div>
+                <div class="scr-eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="scr-panel scr-4">
+                <div class="scr-gauge"><i></i></div>
+                <div class="scr-rev">REV<small>hold while stopped</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="steps-list">
+          <li class="step" data-step="1"><span class="step-n">1</span><h3>Park and open teslasound.io</h3><p>Use the Tesla browser. Bookmark it so it is one tap away next time.</p></li>
+          <li class="step" data-step="2"><span class="step-n">2</span><h3>Press Start engine and allow location</h3><p>The engine is driven by your GPS speed, so without location it cannot rev. Your location stays in the browser.</p></li>
+          <li class="step" data-step="3"><span class="step-n">3</span><h3>Turn up the media volume and drive</h3><p>It plays through the car speakers, like music. Accelerate harder for more revs.</p></li>
+          <li class="step" data-step="4"><span class="step-n">4</span><h3>Stopped at a light? Hold REV</h3><p>Blip the throttle while you wait for green.</p></li>
+        </ol>
+      </div>
+      <div class="know">
+        <div class="know-card rv">
+          <h3>Works in</h3>
+          <ul>
+            <li>Model 3, Model Y, Model S, Model X and Cybertruck</li>
+            <li>Other EVs with a modern web browser</li>
+            <li>A phone on the car speakers over Bluetooth</li>
+          </ul>
+        </div>
+        <div class="know-card rv" style="--rd: .08s">
+          <h3>Good to know</h3>
+          <ul>
+            <li>Keep your music on. Play Spotify or the radio as usual and the engine sound plays along with it.</li>
+            <li>It plays inside the car, like music. A web page cannot use the outside Boombox speaker.</li>
+            <li>Expect a short delay: the revs follow your speed about half a second behind.</li>
+            <li>Keep the page open. The sound stops when the browser goes to the background.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block pricing wrap" id="pricing" aria-labelledby="priceTitle">
+      <p class="eyebrow">Pricing</p>
+      <h2 class="h-big" id="priceTitle">Free every day.<br><span class="grad">Pro for the long drives.</span></h2>
+      <div class="plans">
+        <article class="plan rv">
+          <h3>Free</h3>
+          <p class="price"><b>$0</b> every day</p>
+          <ul>
+            <li>5 minutes of engine time every day</li>
+            <li>All the free sounds</li>
+            <li>Test drive mode, no car needed</li>
+            <li>No account, no sign-up</li>
+          </ul>
+          <button type="button" class="plan-btn" data-go="start">Start the engine</button>
+        </article>
+        <article class="plan plan-pro rv" style="--rd: .08s">
+          <h3>TeslaSound Pro</h3>
+          <p class="price"><b>$3</b> a month + tax</p>
+          <ul>
+            <li>Unlimited engine time</li>
+            <li>Every sound, Pro ones included</li>
+            <li>One subscription for 2 devices, like your car and your phone</li>
+            <li>Cancel any time, payments by Stripe</li>
+          </ul>
+          <button type="button" class="plan-btn plan-btn-pro" data-go="pro">Get Pro</button>
+        </article>
+      </div>
+      <div class="trust">
+        <div class="rv"><h3>Your location stays put</h3><p>GPS is only used to measure your speed, in the browser. It is never sent anywhere.</p></div>
+        <div class="rv" style="--rd: .06s"><h3>No files, no recordings</h3><p>Every engine is synthesized live by our own code, so it reacts to each change in speed.</p></div>
+        <div class="rv" style="--rd: .12s"><h3>Eyes on the road</h3><p>Engine sound can mask sirens and warnings. Keep the volume sensible.</p></div>
+      </div>
+    </section>
+
+    <section class="finale" aria-labelledby="finTitle">
+      <div class="fin-glow" aria-hidden="true"></div>
+      <h2 class="h-huge rv" id="finTitle">Your engine is<br><span class="grad">one address away.</span></h2>
+      <p class="lead rv" style="--rd: .1s">Next time you are parked, type this into the car's browser.</p>
+      <a class="url-pill rv" style="--rd: .2s" href="index.html" data-go="start">teslasound.io</a>
+    </section>
+  </div>
+
+  <footer class="foot foot-made">
+    <p class="made-line"><svg class="made-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 22a11 11 0 1 1 22 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M16 22l6-8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="22" r="2.5" fill="var(--accent)"/></svg><span>TeslaSound is a <a href="https://lifemock.com/">Lifemock</a> production · <a href="mailto:lifemock@gmail.com">lifemock@gmail.com</a></span></p>
+    <nav class="foot-links" aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; disclaimer</a>
+      <a href="content.html">AI &amp; content</a>
+      <a href="redeem.html">Redeem subscription</a>
+      <a href="explore.html#" data-cookie-settings>Cookie settings</a>
+    </nav>
+    <p class="made-legal">Keep your attention on the road. Engine sounds can mask sirens and warnings — keep the volume sensible.
+      Not affiliated with Tesla or any car maker. © 2026 Lifemock.</p>
+  </footer>
+
+  <script src="js/cars.js"></script>
+  <script src="js/engine-dsp.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/consent.js"></script>
+  <script src="js/version.js"></script>
+</body>
+</html>

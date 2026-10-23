@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="color-scheme" content="dark">
+  <title>TeslaSound – Gas Engine Sound &amp; V8 Noise for Your Tesla</title>
+  <meta name="description" content="Engine sound for your Tesla: a live V8, V12 or flat-six, or an electric motor sound, that follows your speed. For Model 3, Y, S, X and Cybertruck.">
+  <link rel="canonical" href="index.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TeslaSound">
+  <meta property="og:url" content="https://teslasound.io/">
+  <meta property="og:title" content="TeslaSound – Gas Engine Sound for Your Tesla">
+  <meta property="og:description" content="Make your Tesla sound like a gasoline car, or something new: a live V8, V12 or flat-six engine, or an electric buzz, that follows your GPS speed. Runs in the Tesla browser.">
+  <meta property="og:image" content="https://teslasound.io/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TeslaSound: gas engine sound for your Tesla">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TeslaSound – Gas Engine Sound for Your Tesla">
+  <meta name="twitter:description" content="A live V8, V12 or flat-six engine sound for your Tesla that follows your real speed. Free for 5 minutes a day. Runs in the Tesla browser.">
+  <meta name="twitter:image" content="https://teslasound.io/img/og.png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://teslasound.io/#website",
+        "url": "https://teslasound.io/",
+        "name": "TeslaSound",
+        "alternateName": ["Tesla Sound", "teslasound.io"],
+        "inLanguage": "en",
+        "publisher": { "@id": "https://teslasound.io/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://teslasound.io/#org",
+        "name": "Lifemock",
+        "url": "https://lifemock.com/",
+        "email": "lifemock@gmail.com",
+        "brand": { "@type": "Brand", "name": "TeslaSound" }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://teslasound.io/#howto",
+        "name": "How to make your Tesla sound like a gas car",
+        "description": "Open TeslaSound in the Tesla browser, allow location and drive: a live engine sound follows your speed.",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Park and open teslasound.io", "text": "Open teslasound.io in the Tesla browser while parked. Bookmark it so it is one tap away next time." },
+          { "@type": "HowToStep", "position": 2, "name": "Press Start engine and allow location", "text": "The engine is driven by your GPS speed, so without location access it cannot rev. Your location stays in the browser." },
+          { "@type": "HowToStep", "position": 3, "name": "Turn up the media volume and drive", "text": "The engine plays through the car speakers, like music, and follows your speed. Accelerate harder for more revs." },
+          { "@type": "HowToStep", "position": 4, "name": "Hold Rev at a light", "text": "Stopped at a light? Hold Rev to blip the throttle." }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://teslasound.io/#app",
+        "name": "TeslaSound",
+        "url": "https://teslasound.io/",
+        "image": "https://teslasound.io/img/og.png",
+        "description": "Gas engine sound for Tesla and other electric cars. A V8, V12 or flat-six engine noise, or an electric buzz, is synthesized live in the browser and follows your GPS speed.",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "Any modern web browser, including the Tesla in-car browser",
+        "browserRequirements": "Requires JavaScript, Web Audio and location access",
+        "isPartOf": { "@id": "https://teslasound.io/#website" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free daily trial",
+            "description": "5 minutes of engine time every day",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "TeslaSound Pro",
+            "description": "Unlimited engine time, up to 2 cars, cancel any time",
+            "price": "3.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "3.00",
+              "priceCurrency": "USD",
+              "valueAddedTaxIncluded": false,
+              "referenceQuantity": { "@type": "QuantitativeValue", "value": 1, "unitCode": "MON" }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://teslasound.io/#faq",
+        "isPartOf": { "@id": "https://teslasound.io/#website" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I make my Tesla sound like a gas car?",
+            "acceptedAnswer": { "@type": "Answer", "text": "While parked, open teslasound.io in the Tesla browser, press Start engine and allow location access. Turn up the media volume and drive: the engine sound follows your speed. Bookmark the page so it is one tap away next time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it play outside the car, like Boombox?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. TeslaSound plays inside the car through the regular speakers, like music. A web page cannot use the external Boombox speaker." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does it need my location?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The engine noise is driven by your speed, and the browser measures speed with GPS. Your location stays in the browser and is never sent anywhere." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a delay in the sound?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A short one. In a Tesla the revs follow your speed about half a second behind, and when you floor it or lift off, the engine responds after about a second. About a quarter of a second of that is the car's own audio system; the rest is because GPS only sees the car speed up after it happens. On a phone, GPS updates once a second, so the sound reacts after about 1.5 to 2 seconds." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it a recording of a real engine?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Every sound is synthesized live by our own code, so the engine reacts to each change in speed instead of looping a sample." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work in other electric cars?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, in any car with a modern web browser and location access. You can also use it on a phone connected to the car speakers by Bluetooth. Keep the page open: the sound stops when the browser goes to the background." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is TeslaSound free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You get 5 minutes of engine time free every day. TeslaSound Pro costs $3 per month plus tax for unlimited driving on up to 2 cars, and you can cancel any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel my subscription?",
+            "acceptedAnswer": { "@type": "Answer", "text": "All subscriptions, payments and cancellations are handled by our payment partner, Stripe. Open the subscription page and enter the email address you paid with. Stripe will email you a link to sign in, where you can cancel. You keep Pro until the end of the month you paid for, and you will not be charged again." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my subscription on my phone or another device?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, no need to pay again. One subscription covers up to 2 devices, such as your car and your phone. Tap Redeem subscription under the Start engine button. The browser you paid with unlocks at once; on any other device, tap Add another device on a Pro device to get a one-time code and type it in." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M5 22a11 11 0 1 1 22 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M16 22l6-8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="16" cy="22" r="2.5" fill="var(--accent)"/>
+      </svg>
+      <h1 class="brand-name">TeslaSound<span class="brand-pro" id="brandPro" hidden> Pro</span></h1>
+    </div>
+    <div class="chips">
+      <span class="chip" id="gpsChip" data-state="off">GPS off</span>
+      <span class="chip" id="audioChip" data-state="off">Engine off</span>
+    </div>
+  </header>
+
+  <main class="dash">
+    <!-- Left column: the gauge box, and under it the way to the story page,
+         only without Pro (js/help.js). -->
+    <div class="gauge-col">
+      <section class="gauge-panel" aria-label="Instrument cluster">
+        <div class="gauge">
+          <svg id="tach" viewBox="-16 -20 432 390" role="img" aria-label="Speed, gear and engine speed">
+            <path id="tachTrack" class="tach-track" pathLength="100"/>
+            <path id="tachRed" class="tach-red"/>
+            <path id="tachValue" class="tach-value" pathLength="100" stroke-dasharray="0 100"/>
+            <g id="tachTicks"></g>
+            <text id="speed" class="g-speed" x="200" y="226">0</text>
+            <text id="unit" class="g-unit" x="200" y="258">km/h</text>
+            <rect class="g-gear-box" x="168" y="280" width="64" height="50" rx="12"/>
+            <text id="gear" class="g-gear" x="200" y="306">–</text>
+            <text class="g-rpm" x="200" y="360"><tspan id="rpm">0</tspan> rpm</text>
+          </svg>
+        </div>
+        <div class="bars">
+          <div class="bar"><span class="bar-label">Throttle</span><div class="bar-track"><div class="bar-fill" id="throttleBar"></div></div></div>
+        </div>
+        <div class="pedals demo-only">
+          <button type="button" class="pedal pedal-brake" data-pedal="brake" aria-label="Brake: press lower to brake harder">
+            Brake
+            <span class="pedal-plate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          </button>
+          <button type="button" class="pedal pedal-gas" data-pedal="gas" aria-label="Gas: the top holds your speed, press lower to accelerate">
+            Gas
+            <span class="pedal-plate" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+        </div>
+        <p class="pedal-note demo-only">The test drive reacts instantly. On the road, GPS and the car's audio add a short delay.</p>
+        <!-- Top right corner: the gauge column takes the full width, the controls move under it, and back (app.js). -->
+        <button type="button" class="gauge-max" id="gaugeMax" aria-pressed="false" aria-label="Maximize gauge" title="Maximize gauge">
+          <svg class="ico-max" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg>
+          <svg class="ico-min" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10h-5V5M14 10l7-7M5 14h5v5M10 14l-7 7"/></svg>
+        </button>
+      </section>
+      <!-- With the gauge maximized, the free engine time left shows to the left of Explore (app.js). -->
+      <div class="gauge-foot">
+        <span class="gauge-time" id="gaugeTime"></span>
+        <a class="explore-link" href="explore.html" hidden>Explore more of teslasound.io<span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <section class="control-panel" aria-label="Controls">
+      <div class="gps-warn" id="gpsWarn" role="alert" hidden>
+        <strong>Important: allow location access when asked.</strong>
+        <span>Without this GPS tracking we cannot rev your engine, because the sound is based on your location / GPS speed.</span>
+        <button type="button" class="link-btn" id="gpsWarnHelp" hidden>How to turn location on</button>
+      </div>
+      <button class="start-btn" id="startBtn" type="button">
+        <span class="start-ring" aria-hidden="true"></span>
+        <span id="startLabel">Start engine</span>
+      </button>
+
+      <div class="pro-line" id="proLine">
+        <span id="proText"></span>
+        <button type="button" class="link-btn" id="proBtn">Unlock · $3/month + tax</button>
+        <button type="button" class="link-btn" id="redeemBtn">Redeem subscription</button>
+      </div>
+
+      <div class="car-hero pick-art" id="carHero"><img alt=""></div>
+      <div class="car-card">
+        <div class="car-name" id="carName">Porsche 911 GT3</div>
+        <div class="car-tag" id="carTag"></div>
+      </div>
+
+      <div class="car-picker" id="carPicker" role="radiogroup" aria-label="Car"></div>
+
+      <div class="segmented" role="radiogroup" aria-label="Speed source">
+        <button type="button" role="radio" data-mode="gps" aria-checked="true">GPS drive</button>
+        <button type="button" role="radio" data-mode="demo" aria-checked="false">Test drive</button>
+      </div>
+
+      <button type="button" class="pad pad-rev" data-pad="rev">Rev<small>hold while stopped</small></button>
+      <button type="button" class="ghost-btn demo-only" id="demoBtn">▶ Play demo run</button>
+
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+
+      <div class="settings">
+        <label class="slider">
+          <span>Volume <output id="volumeOut"></output></span>
+          <input type="range" id="volume" min="0" max="100" step="1">
+        </label>
+        <!-- Everything but Volume folds away under "More settings" (app.js
+             opens it and remembers open or closed). The Pro line stays out. -->
+        <button type="button" class="more-btn" id="moreBtn" aria-expanded="false" aria-controls="moreSettings">More settings</button>
+        <div class="more-settings" id="moreSettings" hidden>
+          <label class="slider">
+            <span>Intensity <output id="intensityOut"></output></span>
+            <input type="range" id="intensity" min="0" max="100" step="1">
+          </label>
+          <label class="slider">
+            <span>Character <output id="characterOut"></output></span>
+            <input type="range" id="character" min="0" max="100" step="1">
+          </label>
+          <label class="slider">
+            <span>Crackle <output id="crackleOut"></output></span>
+            <input type="range" id="crackle" min="0" max="100" step="1">
+          </label>
+          <!-- Whine tuning: only shown when the site runs locally (see app.js). -->
+          <label class="slider" data-local hidden>
+            <span>Whine pitch <output id="whinePitchOut"></output></span>
+            <input type="range" id="whinePitch" min="-100" max="100" step="1" value="0">
+          </label>
+          <label class="slider" data-local hidden>
+            <span>Whine volume <output id="whineLevelOut"></output></span>
+            <input type="range" id="whineLevel" min="-100" max="100" step="1" value="0">
+          </label>
+          <p class="hint" id="whineInfo" data-local hidden></p>
+          <div class="units">
+            <span>Units</span>
+            <div class="segmented small" role="radiogroup" aria-label="Speed units">
+              <button type="button" role="radio" data-units="kmh" aria-checked="true">km/h</button>
+              <button type="button" role="radio" data-units="mph" aria-checked="false">mph</button>
+            </div>
+          </div>
+          <div class="units" id="autoplaySwitch">
+            <span>Autoplay last engine</span>
+            <div class="segmented small" role="radiogroup" aria-label="Autoplay last engine">
+              <button type="button" role="radio" data-autoplay="on" aria-checked="false">On</button>
+              <button type="button" role="radio" data-autoplay="off" aria-checked="true">Off</button>
+            </div>
+          </div>
+        </div>
+        <div class="renew-line" id="renewLine" hidden>TeslaSound <b>Pro</b> · renews <span id="renewDate"></span> · <button type="button" class="link-btn" id="transferBtn">Add another device</button></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- At the fold: help. "How to use it" and "Questions" open in place
+       (js/help.js), the rest are pages. -->
+  <section class="help" aria-label="Help">
+    <p class="help-intro">TeslaSound gives your Tesla the live sound of a gas engine: a V8, V12 or flat-six that follows your real speed, played through the car's speakers. Open it in the Tesla browser, press <b>Start engine</b> and drive. It is free for 5 minutes a day, with no app to install. <a href="about.html">About TeslaSound</a></p>
+    <nav class="help-links" aria-label="Help and legal">
+      <button type="button" class="help-tab" aria-expanded="false" aria-controls="howto">How to use it</button>
+      <button type="button" class="help-tab" aria-expanded="false" aria-controls="faq">Questions</button>
+      <a href="redeem.html">Redeem subscription</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; disclaimer</a>
+      <a href="about.html">About</a>
+      <a href="content.html">AI &amp; content</a>
+      <a href="index.html#" data-cookie-settings>Cookie settings</a>
+      <a href="explore.html">Explore more of teslasound.io</a>
+    </nav>
+    <div class="help-panel" id="howto" hidden>
+      <div class="help-col">
+        <h2>Use it in your Tesla</h2>
+        <ol class="help-steps">
+          <li>Open this page in the Tesla browser while parked. Bookmark it so it is one tap away next time.</li>
+          <li>Press <b>Start engine</b> and <b class="important">allow location access when asked</b>. Without GPS the engine cannot rev: the sound follows your location / speed.</li>
+          <li>Turn up the media volume. The engine follows your speed; accelerate harder for more revs.</li>
+          <li>Stopped at a light? Hold <b>Rev</b> to blip the throttle.</li>
+        </ol>
+        <p class="hint">Volume is always in view; the rest is under <b>More settings</b>, right below it.
+          <b>Intensity</b> controls how eagerly acceleration turns into throttle and how late it shifts.
+          <b>Character</b> goes from a stock, muffled engine to a lumpy cam with open pipes and crackle.
+          <b>Crackle</b> sets how much the exhaust pops and the engine misfires; 0% is a clean-running engine.</p>
+        <p class="hint"><b>Test drive</b> lets you hear the car without moving: press the Gas and Brake pedals (lower on the pedal presses harder; the top of Gas holds your speed), or play the demo run.</p>
+        <p class="hint"><b>Autoplay last engine</b> starts the car you drove last as soon as the page opens. If the browser blocks sound until you touch the screen, tap anywhere to start it.</p>
+      </div>
+      <div class="help-col">
+        <h2>Compatibility</h2>
+        <ul class="diag" id="diag"></ul>
+        <p class="hint">Location stays in this browser: it is only used to measure speed and is never sent anywhere.</p>
+        <h2>Good to know</h2>
+        <ul class="help-know">
+          <li>Works in Model 3, Model Y, Model S, Model X and Cybertruck, in other EVs with a modern web browser, and on a phone on the car speakers over Bluetooth.</li>
+          <li>Keep your music on. Play Spotify or the radio as usual and the engine sound plays along with it.</li>
+          <li>It plays inside the car, like music. A web page cannot use the outside Boombox speaker.</li>
+          <li>Expect a short delay: the revs follow your speed about half a second behind.</li>
+          <li>Keep the page open. The sound stops when the browser goes to the background.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="help-panel help-wide" id="faq" hidden>
+      <h2>Questions</h2>
+      <div class="help-faq">
+        <details class="faq">
+          <summary>How do I make my Tesla sound like a gas car?</summary>
+          <p>While parked, open teslasound.io in the Tesla browser, press <b>Start engine</b> and allow location access. Turn up the media volume and drive: the engine sound follows your speed. Bookmark the page so it is one tap away next time.</p>
+        </details>
+        <details class="faq">
+          <summary>Does it play outside the car, like Boombox?</summary>
+          <p>No. TeslaSound plays inside the car through the regular speakers, like music. A web page cannot use the external Boombox speaker.</p>
+        </details>
+        <details class="faq">
+          <summary>Why does it need my location?</summary>
+          <p>The engine noise is driven by your speed, and the browser measures speed with GPS. Your location stays in the browser and is never sent anywhere.</p>
+        </details>
+        <details class="faq">
+          <summary>Is there a delay in the sound?</summary>
+          <p>A short one. In a Tesla the revs follow your speed about half a second behind, and when you floor it or lift off, the engine responds after about a second. About a quarter of a second of that is the car's own audio system; the rest is because GPS only sees the car speed up after it happens. On a phone, GPS updates once a second, so the sound reacts after about 1.5 to 2 seconds.</p>
+        </details>
+        <details class="faq">
+          <summary>Is it a recording of a real engine?</summary>
+          <p>No. Every sound is synthesized live by our own code, so the engine reacts to each change in speed instead of looping a sample.</p>
+        </details>
+        <details class="faq">
+          <summary>Does it work in other electric cars?</summary>
+          <p>Yes, in any car with a modern web browser and location access. You can also use it on a phone connected to the car speakers by Bluetooth. Keep the page open: the sound stops when the browser goes to the background.</p>
+        </details>
+        <details class="faq">
+          <summary>Is TeslaSound free?</summary>
+          <p>You get 5 minutes of engine time free every day. TeslaSound Pro costs $3 per month plus tax for unlimited driving on up to 2 cars, and you can cancel any time.</p>
+        </details>
+        <details class="faq">
+          <summary>How do I cancel my subscription?</summary>
+          <p>All subscriptions, payments and cancellations are handled by our payment partner, Stripe. Open the <a href="https://billing.stripe.com/p/login/14A14n79t8WC5jn8PY7g400" rel="noopener">subscription page</a> and enter the email address you paid with. Stripe will email you a link to sign in, where you can cancel. You keep Pro until the end of the month you paid for, and you will not be charged again.</p>
+        </details>
+        <details class="faq">
+          <summary>Can I use my subscription on my phone or another device?</summary>
+          <p>Yes, no need to pay again. One subscription covers up to 2 devices, such as your car and your phone. Tap <b>Redeem subscription</b> under the Start engine button. The browser you paid with unlocks at once; on any other device, tap <b>Add another device</b> on a Pro device to get a one-time code and type it in. <a href="redeem.html">Step-by-step guide</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot foot-made">
+    <p class="made-line"><svg class="made-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 22a11 11 0 1 1 22 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M16 22l6-8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="22" r="2.5" fill="var(--accent)"/></svg><span>TeslaSound is a <a href="https://lifemock.com/">Lifemock</a> production · <a href="mailto:lifemock@gmail.com">lifemock@gmail.com</a></span></p>
+    <nav class="foot-links" aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; disclaimer</a>
+      <a href="about.html">About</a>
+      <a href="content.html">AI &amp; content</a>
+      <a href="redeem.html">Redeem subscription</a>
+      <a href="index.html#" data-cookie-settings>Cookie settings</a>
+    </nav>
+    <p class="made-legal">Keep your attention on the road. Engine sounds can mask sirens and warnings — keep the volume sensible.
+      Not affiliated with Tesla or any car maker. © 2026 Lifemock.</p>
+  </footer>
+
+  <!-- Before payModal, so the payment modal stacks on top when opened from here. -->
+  <div class="modal" id="carsModal" hidden role="dialog" aria-modal="true" aria-labelledby="carsTitle">
+    <div class="modal-card cars-card">
+      <button type="button" class="modal-close" id="carsClose" aria-label="Close">×</button>
+      <h2 id="carsTitle">All cars</h2>
+      <p class="modal-lead" id="carsLead"></p>
+      <div class="cars-grid" id="carsGrid"></div>
+      <p class="cars-hint" id="carsHint" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="payModal" hidden role="dialog" aria-modal="true" aria-labelledby="payTitle" data-state="wait">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="payClose" aria-label="Close">×</button>
+      <h2 id="payTitle">Unlock TeslaSound</h2>
+      <p class="modal-lead" id="payLead"></p>
+      <div class="qr" id="payQr" aria-label="QR code for payment"></div>
+      <p class="pay-alt" id="payAlt" hidden><a id="payLink" href="index.html#" target="_blank" rel="noopener">Pay on this device instead</a> · Already subscribed? Close this and tap Redeem subscription (<a href="redeem.html" target="_blank" rel="noopener">how it works</a>).</p>
+      <p class="pay-alt pay-help"><a href="redeem.html" target="_blank" rel="noopener">How redeeming works</a></p>
+      <div class="code-show" id="transferCode" hidden></div>
+      <form class="code-form" id="redeemForm" hidden autocomplete="off">
+        <input type="text" id="redeemCode" maxlength="12" placeholder="ABCD-2345" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Code from your other device">
+        <button type="submit" class="ghost-btn">Redeem</button>
+      </form>
+      <p class="pay-hint" id="payHint" role="status" aria-live="polite"></p>
+      <button type="button" class="ghost-btn" id="payRetry" hidden>Try again</button>
+      <p class="pay-price">$3 per month plus tax · cancel any time · secure payment by Stripe</p>
+    </div>
+  </div>
+
+  <div class="modal" id="gpsHelp" hidden role="dialog" aria-modal="true" aria-labelledby="gpsHelpTitle">
+    <div class="modal-card help-card">
+      <button type="button" class="modal-close" id="gpsHelpClose" aria-label="Close">×</button>
+      <h2 id="gpsHelpTitle">Location is blocked</h2>
+      <p class="modal-lead">TeslaSound needs your location to measure speed. The browser remembers "Never allow", so it has to be switched back on:</p>
+      <h3>Tesla browser</h3>
+      <ol>
+        <li>Tap the lock or info icon next to the address, if one is shown, and set <b>Location</b> to <b>Allow</b>.</li>
+        <li>Check the car's own privacy setting: <b>Controls → Software → Data Sharing</b>.</li>
+        <li>Still blocked? The permission is stored per address, so open the site under a different address (for example with or without <b>www.</b>) and allow it when asked.</li>
+      </ol>
+      <h3>Chrome / Edge</h3>
+      <ol><li>Click the lock or sliders icon left of the address, set <b>Location</b> to <b>Allow</b> (or <b>Reset permission</b>).</li></ol>
+      <h3>Safari</h3>
+      <ol><li>Mac: Safari → Settings → Websites → Location. iPhone: tap <b>aA</b> → Website Settings → Location.</li></ol>
+      <p class="pay-hint">Then reload the page and press <b>Start engine</b> again. Or use <b>Test drive</b> without GPS.</p>
+    </div>
+  </div>
+
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/cars.js"></script>
+  <script src="js/engine-dsp.js"></script>
+  <script src="js/vehicle.js"></script>
+  <script src="js/gps.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/thruster-fx.js"></script>
+  <script src="js/paywall.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/help.js"></script>
+  <script src="js/consent.js"></script>
+  <script src="js/version.js"></script>
+</body>
+</html>
